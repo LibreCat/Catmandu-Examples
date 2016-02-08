@@ -1,13 +1,13 @@
 #!/usr/bin/env perl
 
-use Catmandu::Importer::Mock;
+use Catmandu;
 use Data::Dumper;
 
 # In this Perl script we are going to experiment a bit with the
 # iterable features of Catmandu.
 
 # Mock is a test iterator that generates hashes in memory.
-my $it = Catmandu::Importer::Mock->new(size => 10);
+my $it = Catmandu->importer('Mock',size => 10);
 
 # To return all items in the iterator as an array we use the to_array method
 my $ref =  $it->to_array;
@@ -136,7 +136,7 @@ printf "{n => 42} is in Mock = %s\n" , $result ? 'TRUE' : 'FALSE';
 # a specified size. Lets create a Mock of 100 objects and split
 # the iterator in parts of 10
 print "[group]\n";
-my $it = Catmandu::Importer::Mock->new(size => 100);
+my $it = Catmandu->importer('Mock',size => 100);
 my $groupnr  = 1;
 $it->group(10)->each(sub {
     my $it = shift;
