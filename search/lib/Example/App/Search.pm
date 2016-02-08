@@ -4,7 +4,7 @@ use Catmandu::Sane;
 use Catmandu qw(:load store);
 use Dancer qw(:syntax);
 
-my $bag = store('search')->bag('example');
+my $bag = store('search')->bag;
 
 get '/opensearch.xml' => sub {
     content_type 'xml';
@@ -13,7 +13,8 @@ get '/opensearch.xml' => sub {
 
 get '/' => sub {
     if (my $qs = params->{qs}) {
-
+        my $start = params->{start} // 0;
+        my $limit = params->{limit} // 10;
         my $hits = $bag->search(query => $qs, limit => $limit, start => $start);
 
         return template 'hits', {

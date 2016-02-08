@@ -454,7 +454,12 @@
    -->
 
    <field name="_id" type="string" indexed="true" stored="true" required="true"/>
+   <field name="_identifier" type="string" indexed="true" stored="true"/>
    <field name="_bag" type="string" indexed="true" stored="true" required="true"/> 
+   <field name="_datestamp" type="string" indexed="true" stored="true"/> 
+   <field name="_status" type="string" indexed="true" stored="true"/> 
+   <field name="_setSpec" type="string" indexed="true" stored="true" multiValued="true"/> 
+   <field name="_about" type="text" indexed="true" stored="true" multiValue="true"/> 
    <field name="title" type="text" indexed="true" stored="true" multiValued="true"/>
    <field name="creator" type="text" indexed="true" stored="true" multiValued="true"/>
    <field name="subject" type="text" indexed="true" stored="true" multiValued="true"/>

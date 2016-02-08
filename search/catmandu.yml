@@ -1,4 +1,5 @@
 store:
   search:
       package: Solr
-
+      options:
+        default_bag: example
