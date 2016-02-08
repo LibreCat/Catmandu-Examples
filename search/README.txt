@@ -3,7 +3,7 @@ Catmandu search example
 
 Step 1: install sofware
 
-    $ cpanm Catmandu Catmandu::Store::Solr
+    $ cpanm Catmandu Catmandu::OAI Catmandu::Store::Solr
 
 Step 2: start the Solr server
 -----------------------------
