@@ -12,11 +12,10 @@
 # cd <MONGO_DB>
 # bin/mongod --dbpath /data/db
 #
-use Catmandu::Store::MongoDB;
-use Catmandu::Exporter::YAML;
+use Catmandu;
 
-my $store = Catmandu::Store::MongoDB->new(database_name => 'test');
-my $exporter = Catmandu::Exporter::YAML->new();
+my $store = Catmandu->store('MongoDB',database_name => 'test');
+my $exporter = Catmandu->exporter('YAML');
 
 $store->bag->add({ name => 'Patrick' });
 

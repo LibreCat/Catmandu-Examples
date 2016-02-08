@@ -2,12 +2,11 @@
 #
 # An example how to use the DBI interface
 #
-use Catmandu::Store::DBI;
-use Catmandu::Exporter::YAML;
+use Catmandu;
 
-my $store = Catmandu::Store::DBI->new(data_source => 'DBI:mysql:database=test');
+my $store = Catmandu->store('DBI',data_source => 'DBI:mysql:database=test');
 
-my $exporter = Catmandu::Exporter::YAML->new();
+my $exporter = Catmandu->exporter('YAML');
 
 $store->bag->add({
    name => 'Patrick'

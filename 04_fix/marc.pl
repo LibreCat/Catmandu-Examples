@@ -1,11 +1,11 @@
 #!/usr/bin/env perl
 #
-use Catmandu::Fix;
-use Catmandu::Importer::MARC;
+
+use Catmandu;
 use Data::Dumper;
 
-my $fixer = Catmandu::Fix->new(fixes => ['marc.fix']);
-my $it    = Catmandu::Importer::MARC->new(file => 'marc.txt', type => 'ALEPHSEQ');
+my $fixer = Catmandu->fixer(['marc.fix']);
+my $it    = Catmandu->importer('MARC',file => 'marc.txt', type => 'ALEPHSEQ');
 
 $fixer->fix($it)->each(sub {
    print Dumper($_[0]);
