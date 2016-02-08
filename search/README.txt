@@ -7,9 +7,9 @@ Step 1: install sofware
 
 Step 2: start the Solr server
 -----------------------------
-	
-	# optionally clean the old index
-	# rm -rf solr/solr/data/index
+    
+    # optionally clean the old index
+    # rm -rf solr/solr/data/index
     # rm -rf solr/solr/data/spellchecker
 
     cd solr
