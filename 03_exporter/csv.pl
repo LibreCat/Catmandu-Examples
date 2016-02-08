@@ -1,9 +1,9 @@
 #!/usr/bin/env perl
 # Example CSV exporter
 
-use Catmandu::Exporter::CSV;
+use Catmandu;
 
-my $exporter = Catmandu::Exporter::CSV->new(header => 1);
+my $exporter = Catmandu->exporter('CSV',header => 1);
 
 $exporter->fields([qw(_type _citekey title author isbn)]);
 

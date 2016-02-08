@@ -1,9 +1,9 @@
 #!/usr/bin/env perl
 # Example BibText exporter
 
-use Catmandu::Exporter::RIS;
+use Catmandu;
 
-my $exporter = Catmandu::Exporter::RIS->new();
+my $exporter = Catmandu->exporter('RIS');
 
 $exporter->add({ 
    TY => 'JOUR' ,

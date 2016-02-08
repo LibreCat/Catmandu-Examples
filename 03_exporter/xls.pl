@@ -1,9 +1,9 @@
 #!/usr/bin/env perl
 # Example XLS exporter
 
-use Catmandu::Exporter::XLS;
+use Catmandu;
 
-my $exporter = Catmandu::Exporter::XLS->new(header => 1);
+my $exporter = Catmandu->exporter('XLS',header => 1);
 
 $exporter->fields([qw(_type _citekey title author isbn)]);
 

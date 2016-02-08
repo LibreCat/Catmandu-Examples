@@ -1,9 +1,9 @@
 #!/usr/bin/env perl
-# Example BibText exporter
+# Example BibTeX exporter
 
-use Catmandu::Exporter::BibTeX;
+use Catmandu;
 
-my $exporter = Catmandu::Exporter::BibTeX->new();
+my $exporter = Catmandu->exporter('BibTeX');
 
 $exporter->add({ 
     _type => 'book',
