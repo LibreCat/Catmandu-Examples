@@ -47,7 +47,6 @@ $fixer->fix($importer)->each(sub {
    print Dumper($_[0]);
 });
 
-
 sub data_arr {
   [
 	{ first => 'Charly' , last => 'Parker' , job => 'Artist' , fav => { color => "blue" }} ,
