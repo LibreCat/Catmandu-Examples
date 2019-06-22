@@ -1,0 +1,62 @@
+[
+    {
+        "animals": [
+            "Cat",
+            "Lion",
+            "Tiger"
+        ],
+        "author": {
+            "_id": 1234,
+            "dateBirth": 1879,
+            "name": {
+                "first": "Albert",
+                "last": "Einstein"
+            }
+        },
+        "color1": "red",
+        "color2": "brown",
+        "date": "1918-11-11",
+        "deep": [
+            1,
+            [
+                2,
+                [
+                    3,
+                    4
+                ]
+            ]
+        ],
+        "foo": [
+            "A",
+            "B",
+            "a",
+            "b"
+        ],
+        "list": [
+            "test1",
+            "test2"
+        ],
+        "numbers": [
+            41,
+            42,
+            6,
+            6
+        ],
+        "pairs": [
+            {
+                "key": "age",
+                "val": 12
+            },
+            {
+                "key": "name",
+                "val": "Albert"
+            }
+        ],
+        "person": {
+            "age": 12,
+            "name": "François"
+        },
+        "string": "test",
+        "title": "catmandu"
+    }
+]
