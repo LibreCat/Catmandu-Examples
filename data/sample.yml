@@ -1,0 +1,12 @@
+---
+hello: world
+my:
+    hash:
+        item: test
+    array:
+        - xyz
+colors:
+    - red
+    - blue
+    - green
+...
