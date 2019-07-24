@@ -42,6 +42,11 @@
             6,
             6
         ],
+        "nums": [
+            3,
+            2,
+            1
+        ],
         "pairs": [
             {
                 "key": "age",
@@ -57,6 +62,7 @@
             "name": "François"
         },
         "string": "test",
-        "title": "catmandu"
+        "title": "catmandu",
+        "x": 1
     }
 ]
